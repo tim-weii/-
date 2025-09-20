@@ -1,0 +1,26 @@
+[TV1]
+Best_Chromosome: [0 1 1 1 1 1 0 1 1 1 1 1 0 0 1 0 1 1 1 1 1]
+測試結果:
+score: 0.565
+stratedy_money:  52256
+[TV2]
+Best_Chromosome: [1 1 1 1 1 1 0 0 0 0 1 0 1 0 1 1 1 1 1 1 0]
+測試結果:
+score: 0.58375
+stratedy_money:  44570
+[TV3]
+Best_Chromosome: [1 1 0 1 1 1 1 1 0 1 1 1 1 0 1 1 0 1 0 1 1]
+測試結果:
+score: 0.59
+stratedy_money:  32619
+[TV4]
+Best_Chromosome: [0 1 1 1 0 1 1 1 1 1 0 0 1 1 1 1 1 0 1 1 0]
+測試結果:
+score: 0.5825
+stratedy_money:  29001
+[TV5]
+Best_Chromosome: [1 1 1 0 1 1 1 1 1 1 1 0 1 1 0 1 1 1 0 1 1]
+測試結果:
+score: 0.635
+stratedy_money:  29862
+IRR: [39.19615296140393, 45.29834197705986, 48.30537143539644, 70.29679973505081]

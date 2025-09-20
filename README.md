@@ -1,6 +1,6 @@
-# GA-Based Hybrid Stock Selection Framework (GA + ML Models)
+# Genetic Algorithm and Machine Learning-based Stock Selection (GA + ML Models)
 
->  This project is a **decision-support framework** for stock analysis.
+>  This project is a **decision-support** for stock analysis.
 
 > It may help you analyze stocks, but if you lose money, don’t come looking for me.
  

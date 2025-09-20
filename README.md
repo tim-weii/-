@@ -87,7 +87,9 @@ def decode(chromosome):
             code[index] += new_chromosome[gene] * (2**j)
         index += 1
     
-    return code```
+    return code
+
+```
 
 ---
 
@@ -102,7 +104,9 @@ def initial_population(pop_num, dna_length):
         np.random.shuffle(chromosome)
         population.append(chromosome)
     # print(population)
-    return population```
+    return population
+
+```
 
 ---
 
@@ -129,7 +133,9 @@ def fitness(data, pop):
     scores, pop = np.array(scores), np.array(pop)
     inds = np.argsort(scores)
     
-    return list(pop[inds, :][::-1]), list(scores[inds][::-1])  #my_list[start(開始的index):end(結束的index):sep(間隔)]```
+    return list(pop[inds, :][::-1]), list(scores[inds][::-1])  #my_list[start(開始的index):end(結束的index):sep(間隔)]
+
+```
 
 ---
 
@@ -146,7 +152,9 @@ def selection(data, pop):
     father = ran_F[0]
     mother = ran_M[0]
 
-    return father, mother```
+    return father, mother
+
+```
 
 ---
 
@@ -168,7 +176,9 @@ def cross(data, pop, cross_rate=0.7):
             
         new_pop.extend([father, mother])
         
-    return new_pop```
+    return new_pop
+
+```
 
 ---
 
@@ -188,7 +198,9 @@ def mutation(cross_pop, mutation_rate=0.005):
                 
         new_pop.append(cross_pop[i])
 
-    return new_pop```
+    return new_pop
+
+```
 
 ---
 

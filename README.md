@@ -1,14 +1,29 @@
 # Genetic Algorithm and Machine Learning-based Stock Selection (GA + ML Models)
 
->  This project is a **decision-support** for stock analysis.
+> **EN**: This project is a decision-support framework for stock analysis.  
+> **ZH**: 本專案為一個股票投資決策支援框架。
 
-> It may help you analyze stocks, but if you lose money, don’t come looking for me.
- 
-It combines:  
-- **Genetic Algorithm (GA):** Explores and selects the most informative feature subsets.  
-- **Machine Learning Models (XGBoost, SVM, RF, etc.):** Act as evaluators to measure predictive power of selected features.  
+---
 
-The GA iteratively evolves feature subsets based on prediction accuracy, converging toward an optimal combination.  
+## Project Overview
+- The project adopts a **walk-forward training approach**.  
+  Training time is gradually extended (e.g., 0.5 years, 1.0 years, up to 4 years), and each model is tested on the remaining period.  
+  This simulates real-world trading where models continuously learn from newly available data.
+  
+---
+
+## Methodology / 方法
+- **Genetic Algorithm (GA)**  
+  - Used to optimize model configurations and support feature evolution.  
+
+- **Machine Learning Models (XGBoost, SVM, Random Forest, etc.)**  
+  - Serve as evaluators to assess predictive performance under different training periods.  
+
+- **Walk-forward Training (0.5 → 4 years)**  
+  - Gradually increase training length while testing on the following unseen period.  
+
+- **Evaluation Metric: Internal Rate of Return (IRR)**  
+  - IRR represents the average growth rate of investment strategies during the test period.  
 
 ---
 
